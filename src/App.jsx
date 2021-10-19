@@ -1,10 +1,21 @@
-import React from 'react';
+import React, {Component} from 'react';
+import ReactTV,{ Plataform} from 'react-tv';
 import './App.css';
+//https://github.com/raphamorim/react-tv
 import Contato from "./componentes/layout/contato";
 import Card from "./componentes/layout/Card";
 import PlayList from './componentes/PlayList';
 
+
+
 function App(props){
+    //state ={date: new Date()}
+    /*
+      componentDidMount(){
+      setInterval(() => setState({date: new Date()}),1000)
+    }
+    https://pt-br.reactjs.org/docs/state-and-lifecycle.html
+    */
     const texto0 = "Contato"
     const texto1 = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium est dolore minima quo nesciunt. Repudiandae laudantium quam quas soluta a ducimus eum dolorem quia inventore. Quia omnis tenetur voluptate explicabo."
     const texto2 = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, perspiciatis. Quo natus omnis atque quam fugiat exercitationem quos. Beatae inventore omnis aliquid ducimus vitae assumenda alias molestiae aliquam unde reiciendis."

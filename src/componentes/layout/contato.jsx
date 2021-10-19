@@ -2,6 +2,9 @@ import React from 'react';
 import './contato.css'
 
 function Contato(props) {
+    const alerta = ()=>{
+        alert("Usuario gerou uma ação");
+    };
     return (
         <div className="formulario">
             <form action="" className="Conteudo">
@@ -18,7 +21,7 @@ function Contato(props) {
                     <textarea id="msg" rows="5" cols="25"></textarea>
                 </div>
                 <div class="button">
-                    <button type="submit">Enviar sua mensagem</button>
+                    <button type="submit" onClick={alerta}>Enviar sua mensagem</button>
                 </div>
             </form>
             <div className="Footer">
